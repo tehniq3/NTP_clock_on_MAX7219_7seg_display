@@ -786,7 +786,7 @@ void displayTime(){
     byte tensSec = secunda / 10;
     byte unitsSec = secunda % 10;
 
-  if(tensHour < 0)  // hour >= 10
+  if(tensHour == 0)  // hour >= 10
   {
    lc.setRow(0,7,B00000000); // free digit 
   }
